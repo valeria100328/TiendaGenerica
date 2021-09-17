@@ -39,7 +39,7 @@ public class ClienteController {
 	 */
 	
 	@RequestMapping("/consultarPersona")
-	public ArrayList<ClienteVO> consultarPersona(int documento) {
+	public ClienteVO consultarPersona(int documento) {
 		ClienteDAO Dao=new ClienteDAO(); 
 	return 	Dao.consultarPersona(documento);
 		
