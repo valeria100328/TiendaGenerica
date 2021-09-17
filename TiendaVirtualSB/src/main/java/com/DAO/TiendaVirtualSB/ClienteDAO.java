@@ -67,32 +67,29 @@ public class ClienteDAO
  * @param documento 
  * @return
  */
-public ArrayList<ClienteVO> consultarPersona(int documento) {
-  ArrayList< ClienteVO> miCliente = new ArrayList< ClienteVO>();
-  Conexion conex= new Conexion();
-    
-  try {
-   PreparedStatement consulta = conex.getConnection().prepareStatement("SELECT * FROM cliente where idCliente = ? ");
-   consulta.setInt(1, documento);
-   ResultSet res = consulta.executeQuery();
-   
-  if(res.next()){
-    ClienteVO persona= new ClienteVO();
-    persona.setIdCliente(Integer.parseInt(res.getString("idcliente")));
-    persona.setNombreCliente(res.getString("nombre"));
-    persona.setApellidoCliente(res.getString("apellido"));
- 
-    miCliente.add(persona);
-          }
-          res.close();
-          consulta.close();
-          conex.desconectar();
-   
-  } catch (Exception e) {
-   //JOptionPane.showMessageDialog(null, "no se pudo consultar la Persona\n"+e);
-  }
-  return miCliente;
- }
+ public ClienteVO consultarPersona(int documento) {
+	  //ArrayList< ClienteVO> miCliente = new ArrayList< ClienteVO>();
+	  Conexion conex= new Conexion();
+	  ClienteVO persona= new ClienteVO();
+	  try {
+	   PreparedStatement consulta = conex.getConnection().prepareStatement("SELECT * FROM cliente where idCliente = ? ");
+	   consulta.setInt(1, documento);
+	   ResultSet res = consulta.executeQuery();
+	   
+	  if(res.next()){
+	    persona.setIdCliente(Integer.parseInt(res.getString("idcliente")));
+	    persona.setNombreCliente(res.getString("nombre"));
+	    persona.setApellidoCliente(res.getString("apellido"));
+	    //miCliente.add(persona);
+	  }
+	  res.close();
+	  consulta.close();
+	  conex.desconectar();
+	  } catch (Exception e) {
+	   //JOptionPane.showMessageDialog(null, "no se pudo consultar la Persona\n"+e);
+	  }
+	  return persona; //miCliente;
+	 }
 
 
 
