@@ -6,7 +6,8 @@ public class ClienteVO {
 	 private String nombreCliente;
 	 private String apellidoCliente;
 	 private String usuario;
-	 private String contraseÃ±a;
+	 private String contraseña;
+
 	 
 	 /**
 	  * @return the idCliente
@@ -50,18 +51,20 @@ public class ClienteVO {
 	  this.apellidoCliente = nombreCliente;
 	 }
 	 
-     public String getUsuario() {
-         return usuario;
-     }
-     public void setUsuario(String usuario) {
+	 public String getUsuario() {
+		 return usuario;
+	 }
+
+	 public void setUsuario(String usuario) {
         this.usuario = usuario;
-    }
-     public String getContraseÃ±a() {
-        return contraseÃ±a;
-    }
-     public void setContraseÃ±a(String contraseÃ±a) {
-        this.contraseÃ±a = contraseÃ±a;
-    }	 
-	 
+	}
+
+	 public String getContraseña() {
+        return contraseña;
+	}
+
+	 public void setContraseña(String contraseña) {
+        this.contraseña = contraseña;
+	}
 
 }

@@ -1,5 +1,6 @@
 package com.BO.TiendaVirtualSB;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -38,14 +39,19 @@ public class ClienteController {
 	 * @return
 	 */
 	
-	@RequestMapping("/consultarPersona")
-	public ClienteVO consultarPersona(int documento) {
-		ClienteDAO Dao=new ClienteDAO(); 
-	return 	Dao.consultarPersona(documento);
-		
-	}
-
-
+	
+	@RequestMapping("/validar")
+    public boolean validate(ClienteVO persona) {
+        ClienteDAO Dao=new ClienteDAO(); 
+        boolean validar=false;
+        try {
+			validar=Dao.validate(persona);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+        return validar;
+        
+    }
 
 	/**
 	 * permite consultar la lista de Clientes
@@ -55,9 +61,7 @@ public class ClienteController {
 	public ArrayList< ClienteVO> listaDePersonas() {
 		ClienteDAO Dao=new ClienteDAO(); 
 			
-		return Dao.listaDePersonas();
-		
+		return Dao.listaDePersonas();	   
 	}
-
-
 }
+	

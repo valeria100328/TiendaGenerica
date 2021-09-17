@@ -1,5 +1,3 @@
-package com.DAO.TiendaVirtualSB;
-
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -31,7 +29,7 @@ public class ClienteDAO
    Statement estatuto = conex.getConnection().createStatement();
    estatuto.executeUpdate("INSERT INTO cliente VALUES ('"+persona.getIdCliente()+"', '"
      +persona.getNombreCliente()+"', '"+persona.getApellidoCliente()+"')");
-   //JOptionPane.showMessageDialog(null, "Se ha registrado Exitosamente","InformaciÃ³n",JOptionPane.INFORMATION_MESSAGE);
+   //JOptionPane.showMessageDialog(null, "Se ha registrado Exitosamente","Información",JOptionPane.INFORMATION_MESSAGE);
    estatuto.close();
    conex.desconectar();
    
@@ -51,7 +49,7 @@ public class ClienteDAO
                  " apellido ='" + persona.getApellidoCliente()+"' "+
                  "WHERE idcliente=" + persona.getIdCliente()
                  );
-         /*JOptionPane.showMessageDialog(null, "Se ha registrado Exitosamente", "InformaciÃ³n",
+         /*JOptionPane.showMessageDialog(null, "Se ha registrado Exitosamente", "Información",
                  JOptionPane.INFORMATION_MESSAGE);*/
          estatuto.close();
          conex.desconectar();
@@ -68,28 +66,29 @@ public class ClienteDAO
  * @return
  */
  public ClienteVO consultarPersona(int documento) {
-	  //ArrayList< ClienteVO> miCliente = new ArrayList< ClienteVO>();
-	  Conexion conex= new Conexion();
-	  ClienteVO persona= new ClienteVO();
-	  try {
-	   PreparedStatement consulta = conex.getConnection().prepareStatement("SELECT * FROM cliente where idCliente = ? ");
-	   consulta.setInt(1, documento);
-	   ResultSet res = consulta.executeQuery();
-	   
-	  if(res.next()){
-	    persona.setIdCliente(Integer.parseInt(res.getString("idcliente")));
-	    persona.setNombreCliente(res.getString("nombre"));
-	    persona.setApellidoCliente(res.getString("apellido"));
-	    //miCliente.add(persona);
-	  }
-	  res.close();
-	  consulta.close();
-	  conex.desconectar();
-	  } catch (Exception e) {
-	   //JOptionPane.showMessageDialog(null, "no se pudo consultar la Persona\n"+e);
-	  }
-	  return persona; //miCliente;
-	 }
+	    //ArrayList<ClienteVO> miCliente = new ArrayList<ClienteVO>();
+	    Conexion conex = new Conexion();
+	    ClienteVO persona = new ClienteVO();
+	    try {
+	        PreparedStatement consulta = conex.getConnection()
+	                .prepareStatement("SELECT * FROM cliente where idCliente = ? ");
+	        consulta.setInt(1, documento);
+	        ResultSet res = consulta.executeQuery();
+	        
+	        if (res.next()) {            
+	            persona.setIdCliente(Integer.parseInt(res.getString("idcliente")));
+	            persona.setNombreCliente(res.getString("nombre"));
+	            persona.setApellidoCliente(res.getString("apellido"));
+	            //miCliente.add(persona);
+	        }
+	        res.close();
+	        consulta.close();
+	        conex.desconectar();
+	    } catch (Exception e) {
+	        // JOptionPane.showMessageDialog(null, "no se pudo consultar la Persona\n"+e);
+	    }
+	    return persona;//miCliente;
+	}
 
 
 
@@ -104,6 +103,7 @@ public ArrayList< ClienteVO> listaDePersonas() {
   try {
    PreparedStatement consulta = conex.getConnection().prepareStatement("SELECT * FROM cliente");
    ResultSet res = consulta.executeQuery();
+  
    while(res.next()){
     ClienteVO persona= new ClienteVO();
     persona.setIdCliente(Integer.parseInt(res.getString("idcliente")));
@@ -122,4 +122,26 @@ public ArrayList< ClienteVO> listaDePersonas() {
   return miCliente;
  }
 
+	public boolean validate(ClienteVO persona){
+		boolean validacion=true;
+    try {
+    	Conexion conex= new Conexion();
+    	PreparedStatement consulta = conex.getConnection().prepareStatement("SELECT * FROM ingreso where usuario = ? and contraseña = ? ");
+        consulta.setString(1, persona.getUsuario());
+        consulta.setString(2, persona.getContraseña());
+        ResultSet rs = consulta.executeQuery();
+        if (!rs.isBeforeFirst()) {    
+    	    System.out.println("No data"); 
+    	    validacion=false;
+    	} 
+        else{
+        	validacion=true;
+        	System.out.println("si data");
+        }
+    } catch (SQLException e) {
+    	
+    }
+    return validacion;
+	}
+	
 }
