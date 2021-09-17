@@ -5,20 +5,15 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link href="webapp/Registro.css" rel="stylesheet" type = "text/css" />
 </head>
-<style>
-h1 {
- 	color: #C0C0C0;
-    text-align: center;
-         }
-</style>
 <body>
- <div align="center">
+ <div>
  
 <h1>Bienvenidos a la Tienda Genérica</h1>
 
   <form action="Login.jsp" method="post">
-   <table style="with: 100%">
+   <table>
     <tr>
      <td>Usuario</td>
      <td><input type="text" name="usuario" /></td>
@@ -29,7 +24,7 @@ h1 {
     </tr>
 
    </table>
-   <div style="text-align: center">
+   <div>
    	<input type = "submit" value = "Aceptar" />
 	<input type = "submit" value = "Eliminar" />
    </div>

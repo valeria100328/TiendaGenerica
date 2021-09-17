@@ -1,1 +1,16 @@
+body {
+	background-color: LightCyan;
+}
+h1 {
+ 	color: #C0C0C0;
+    text-align: center;
+}
 
+div {
+	align: center;
+	text-align: center;
+} 	
+
+table {
+	width: 100%;
+}   
