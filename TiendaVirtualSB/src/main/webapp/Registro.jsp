@@ -6,7 +6,6 @@
 <meta charset="ISO-8859-1">
 <title>Tienda Genérica</title>
 <link href="Registro.css" rel="stylesheet" type = "text/css" />
-<link href="Registro.css" rel="stylesheet" type = "text/css" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
