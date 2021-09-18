@@ -31,7 +31,7 @@
     	<button class="button"><strong>Aceptar</strong></button>
         <button class="button"><strong>Eliminar</strong></button>
     </div>
-    </div> 
+    </div>
   </form>
  </div>
 </body>
