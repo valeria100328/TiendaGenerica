@@ -12,7 +12,8 @@
 </head>
 <body>
 <div class = "contenedor">
-<div class="table1" > 
+<div class="table1">
+<form action="Login.jsp" method="post">
     <table cellpadding = "12">
         <tr class = "Nombre">
             <td colspan=2><strong> Bienvenidos a la Tienda Genérica</strong></td>
@@ -30,7 +31,8 @@
     	<button class="button"><strong>Aceptar</strong></button>
         <button class="button"><strong>Eliminar</strong></button>
     </div>
-    </div>
+</form>
+</div>
 
  </div>
 </body>
