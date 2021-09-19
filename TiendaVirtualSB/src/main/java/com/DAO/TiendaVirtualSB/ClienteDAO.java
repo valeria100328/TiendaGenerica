@@ -122,26 +122,26 @@ public ArrayList< ClienteVO> listaDePersonas() {
   return miCliente;
  }
 
-	public boolean validate(ClienteVO persona){
+public boolean validate(ClienteVO persona){
 		boolean validacion=true;
-    try {
-    	Conexion conex= new Conexion();
-    	PreparedStatement consulta = conex.getConnection().prepareStatement("SELECT * FROM ingreso where usuario = ? and contraseña = ? ");
-        consulta.setString(1, persona.getUsuario());
-        consulta.setString(2, persona.getContraseña());
-        ResultSet rs = consulta.executeQuery();
-        if (!rs.isBeforeFirst()) {    
-    	    System.out.println("No data"); 
-    	    validacion=false;
-    	} 
-        else{
-        	validacion=true;
-        	System.out.println("si data");
-        }
-    } catch (SQLException e) {
-    	
-    }
-    return validacion;
+	try {
+		Conexion conex= new Conexion();
+		PreparedStatement consulta = conex.getConnection().prepareStatement("SELECT * FROM usuarios where usuario = ? and password = ? ");
+	    consulta.setString(1, persona.getUsuario());
+	    consulta.setString(2, persona.getContraseña());
+	    ResultSet rs = consulta.executeQuery();
+	    if (!rs.isBeforeFirst()) {    
+		    System.out.println("No data"); 
+		    validacion=false;
+		} 
+	    else{
+	    	validacion=true;
+	    	System.out.println("si data");
+	    }
+	} catch (SQLException e) {
+		
+	}
+	return validacion;
 	}
 	
 }
