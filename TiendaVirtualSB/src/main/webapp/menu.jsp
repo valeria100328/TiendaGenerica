@@ -4,22 +4,33 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title> Menú Tienda Genérica</title>
+<link href="menu.css" rel="stylesheet" type = "text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
-<table  cellpadding = "4" >
-      <tr>
-        <th colspan="28" bgcolor="grey" align="left" width="1500px" height="30px"> <font color="white">Tienda generica</font></th>
-      </tr>
-      <tr>
-        <td align="center"><a href="Usuarios.html">Usuarios</a></td>
-        <td align="center"><a href="Clientes.html">Clientes</a></td>
-        <td align="center"><a href="Proovedores.html">Proveedores</a></td>
-        <td align="center"><a href="Productos.html">Productos</a></td>
-        <td align="center"><a href="Ventas.html">Ventas</a></td>
-        <td align="center"><a href="Reportes.html">Reportes</a></td>
-      </tr>
-    </table>
-    <hr>
+	<header>
+		<img alt="tienda" src="Tienda.jpg" width= 130 height = 125/>
+    	<div class="menu">
+	        <a href = "Usuarios.jsp">
+    			<button class="button"><span><i class="fas fa-users"></i> Usuarios</span></button>
+  			</a>
+  			<a href = "Clientes.jsp">
+  				<button class="button"><span><i class="fas fa-user-tag"></i> Clientes</span></button>
+  			</a>
+	        <a href = "Proveedores.jsp">
+	         	<button class="button"><span><i class="fas fa-truck-moving"></i> Proveedores</span></button>
+	        </a>
+	        <a href = "Productos.jsp">
+	        	<button class="button"><span><i class="fas fa-box-open"></i> Productos</span></button>
+	        </a>
+	        <a href = "Ventas.jsp">
+	        	<button class="button"><span><i class="fab fa-shopify"></i> Ventas</span></button>
+	        </a>
+	        <a href = "Reportes.jsp">
+	        	<button class="button "><span><i class="fas fa-paste"></i> Reportes</span></button>
+	        </a>
+    	</div>
+	</header>
 </body>
 </html>
