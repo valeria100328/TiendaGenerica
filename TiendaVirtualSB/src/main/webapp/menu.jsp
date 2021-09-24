@@ -12,7 +12,7 @@
 	<header>
 		<img alt="tienda" src="Tienda.jpg" width= 130 height = 125/>
     	<div class="menu">
-	        <a href = "Usuarios.jsp">
+	        <a href = "Usuario.jsp">
     			<button class="button"><span><i class="fas fa-users"></i> Usuarios</span></button>
   			</a>
   			<a href = "Clientes.jsp">
