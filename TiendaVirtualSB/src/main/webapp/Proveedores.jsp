@@ -15,7 +15,7 @@
 	<header>
 		<img alt="tienda" src="Tienda.jpg" width= 130 height = 125/>
     	<div class="menu">
-	        <a href = "Usuarios.jsp">
+	        <a href = "Usuario.jsp">
     			<button class="button"><span><i class="fas fa-users"></i> Usuarios</span></button>
   			</a>
   			<a href = "Clientes.jsp">
@@ -37,7 +37,7 @@
 	</header>
 	<div class = "contenedor">
 		<div class="formularioU" >
-			<form action="ProcesoProveedores.jsp" method="post"> 
+			<form action="ProveedoresProceso.jsp" method="post"> 
 				<table border="0">
         			<tr>
           				<td height="30px"></td>
@@ -55,7 +55,7 @@
         			</tr>
         			<tr>
 				        <td>Nombre Proveedor:</td>
-				        <td><input type="text" name="Nombre_Proveedor"></td>
+				        <td><input type="text" name="Nombre"></td>
 				        <td width="100px"></td>
 				        <td>Ciudad:</td>
 				        <td><input type="text" name="Ciudad" ></td>
@@ -73,11 +73,11 @@
         			</tr>
       			</table>		
      			<div class = "Botones">
-				    	<button class="btn"><strong>Consultar</strong></button>
-				    	<button class="btn"><strong>Crear</strong></button>
-				    	<button class="btn"><strong>Actualizar</strong></button>
-				    	<button class="btn"><strong>Borrar</strong></button>
-				    	<button class="btn"><strong>Limpiar</strong></button>
+				    	<input class="btn" type="submit" name="boton" value="Consultar">
+				    	<input class="btn" type="submit" name="boton" value="Crear" >
+				    	<input class="btn" type="submit" name="boton" value="Actualizar" >
+				    	<input class="btn" type="submit" name="boton" value="Borrar" >
+				    	<input class="btn" type="submit" name="boton" value="Limpiar" >
     			</div>
 			</form>
 		</div> 
