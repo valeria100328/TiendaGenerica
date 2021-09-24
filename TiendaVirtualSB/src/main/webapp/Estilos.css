@@ -74,3 +74,63 @@ a {
   opacity: 1;
   right: 0;
 }
+
+.contenedor {
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	padding: 20px;
+}
+
+.formularioU {
+	font-size: 23px;
+    margin: 0 auto;
+    padding-top: 15px;
+    width: 700px;
+	background: #fff;
+	border-radius: 10px;
+	padding: 20px;
+	place-items: center;
+	text-align: center;
+	
+  }
+  
+table , th, td  {
+	text-align:center;
+    border: 0px solid rgb(27, 26, 26);
+    border-collapse: collapse;
+ 	font-family: 'Quicksand', sans-serif;
+	font-size:20px;
+  }
+ 
+th{
+    text-align: center;
+  }
+  
+ .btn {
+  	display: inline-block;
+  	padding: 10px 20px;
+	font-size: 15px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #000000;
+	background-color: #F5DEB3;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+	margin: 10px;
+}
+
+.btn:hover {
+	background-color: #D2B48C;
+}
+
+.btn:active {
+  background-color: #D2B48C;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
