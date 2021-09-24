@@ -5,11 +5,14 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Proveedores</title>
-<link href="Proveedores.css" rel="stylesheet" type = "text/css" />
+<link href="Estilos.css" rel="stylesheet" type = "text/css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
+	<header>
 		<img alt="tienda" src="Tienda.jpg" width= 130 height = 125/>
     	<div class="menu">
 	        <a href = "Usuarios.jsp">
@@ -32,5 +35,52 @@
 	        </a>
     	</div>
 	</header>
+	<div class = "contenedor">
+		<div class="formularioU" >
+			<form action="ProcesoProveedores.jsp" method="post"> 
+				<table border="0">
+        			<tr>
+          				<td height="30px"></td>
+        			</tr>
+        			<tr>
+          				<td>NIT:</td>
+          				<td><input type="text" name="NIT"></td>
+          				<td width="100px"></td>
+          				<td>Teléfono:</td>
+          				<td><input type="text" name="Telefono"></td>
+          				<td width="100px"></td>
+        			</tr>
+        			<tr>
+         				<td height="20px"></td>
+        			</tr>
+        			<tr>
+				        <td>Nombre Proveedor:</td>
+				        <td><input type="text" name="Nombre_Proveedor"></td>
+				        <td width="100px"></td>
+				        <td>Ciudad:</td>
+				        <td><input type="password" name="Ciudad" ></td>
+        			</tr>
+        			<tr>
+          				<td height="20px"></td>
+        			</tr>
+        			<tr>
+          				<td>Dirección:</td>
+          				<td><input type="text" name="Direccion" ></td>
+          				<td width="100px"></td>
+        			</tr>
+        			<tr>
+          				<td height="20px"></td>
+        			</tr>
+      			</table>		
+     			<div class = "Botones">
+				    	<button class="btn"><strong>Consultar</strong></button>
+				    	<button class="btn"><strong>Crear</strong></button>
+				    	<button class="btn"><strong>Actualizar</strong></button>
+				    	<button class="btn"><strong>Borrar</strong></button>
+				    	<button class="btn"><strong>Limpiar</strong></button>
+    			</div>
+			</form>
+		</div> 
+	</div>
 </body>
 </html>
