@@ -58,7 +58,7 @@
 				        <td><input type="text" name="Nombre_Proveedor"></td>
 				        <td width="100px"></td>
 				        <td>Ciudad:</td>
-				        <td><input type="password" name="Ciudad" ></td>
+				        <td><input type="text" name="Ciudad" ></td>
         			</tr>
         			<tr>
           				<td height="20px"></td>
