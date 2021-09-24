@@ -37,8 +37,8 @@
 	</header>
 	<div class = "contenedor">
 		<div class="formularioU" >
-			<form action="ProcesoUsuarios.jsp" method="post"> 
-        		<table border="0">
+			<form action="ProcesoClientes.jsp" method="post"> 
+				<table border="0">
         			<tr>
           				<td height="30px"></td>
         			</tr>
@@ -46,8 +46,8 @@
           				<td>Cédula:</td>
           				<td><input type="text" name="Cedula"></td>
           				<td width="100px"></td>
-          				<td>Usuario:</td>
-          				<td><input type="text" name="Usuario"></td>
+          				<td>Teléfono:</td>
+          				<td><input type="text" name="Telefono"></td>
           				<td width="100px"></td>
         			</tr>
         			<tr>
@@ -57,28 +57,28 @@
 				        <td>Nombre Completo:</td>
 				        <td><input type="text" name="Nombre"></td>
 				        <td width="100px"></td>
-				        <td>Contraseña:</td>
-				        <td><input type="password" name="Contrasena" ></td>
+				        <td>Correo Electrónico:</td>
+				        <td><input type="text" name="correo" ></td>
         			</tr>
         			<tr>
           				<td height="20px"></td>
         			</tr>
         			<tr>
-          				<td>Correo electrónico:</td>
-          				<td><input type="text" name="Correo" ></td>
+          				<td>Dirección:</td>
+          				<td><input type="text" name="Direccion" ></td>
           				<td width="100px"></td>
         			</tr>
         			<tr>
           				<td height="20px"></td>
         			</tr>
       			</table>		
-     				<div class = "Botones">
+     			<div class = "Botones">
 				    	<button class="btn"><strong>Consultar</strong></button>
 				    	<button class="btn"><strong>Crear</strong></button>
 				    	<button class="btn"><strong>Actualizar</strong></button>
 				    	<button class="btn"><strong>Borrar</strong></button>
 				    	<button class="btn"><strong>Limpiar</strong></button>
-    				</div>
+    			</div>
 			</form>
 		</div> 
 	</div>
