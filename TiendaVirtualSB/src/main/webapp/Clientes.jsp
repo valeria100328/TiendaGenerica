@@ -5,11 +5,11 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Clientes</title>
-<link href="Clientes.css" rel="stylesheet" type = "text/css" />
+<link href="Estilos.css" rel="stylesheet" type = "text/css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
-<header>
+   <header>
 		<img alt="tienda" src="Tienda.jpg" width= 130 height = 125/>
     	<div class="menu">
 	        <a href = "Usuarios.jsp">
@@ -32,5 +32,52 @@
 	        </a>
     	</div>
 	</header>
+	<div class = "contenedor">
+		<div class="formularioU" >
+			<form action="ProcesoUsuarios.jsp" method="post"> 
+        		<table border="0">
+        			<tr>
+          				<td height="30px"></td>
+        			</tr>
+        			<tr>
+          				<td>Cédula:</td>
+          				<td><input type="text" name="Cedula"></td>
+          				<td width="100px"></td>
+          				<td>Usuario:</td>
+          				<td><input type="text" name="Usuario"></td>
+          				<td width="100px"></td>
+        			</tr>
+        			<tr>
+         				<td height="20px"></td>
+        			</tr>
+        			<tr>
+				        <td>Nombre Completo:</td>
+				        <td><input type="text" name="Nombre"></td>
+				        <td width="100px"></td>
+				        <td>Contraseña:</td>
+				        <td><input type="password" name="Contrasena" ></td>
+        			</tr>
+        			<tr>
+          				<td height="20px"></td>
+        			</tr>
+        			<tr>
+          				<td>Correo electrónico:</td>
+          				<td><input type="text" name="Correo" ></td>
+          				<td width="100px"></td>
+        			</tr>
+        			<tr>
+          				<td height="20px"></td>
+        			</tr>
+      			</table>		
+     				<div class = "Botones">
+				    	<button class="btn"><strong>Consultar</strong></button>
+				    	<button class="btn"><strong>Crear</strong></button>
+				    	<button class="btn"><strong>Actualizar</strong></button>
+				    	<button class="btn"><strong>Borrar</strong></button>
+				    	<button class="btn"><strong>Limpiar</strong></button>
+    				</div>
+			</form>
+		</div> 
+	</div>
 </body>
 </html>
