@@ -9,7 +9,7 @@ import java.sql.*;
  */
 public class Conexion {
    /**Parametros de conexion*/
-   static String bd = "tienda_virtual";
+   static String bd = "Tienda143";
    static String login = "root";
    static String password = "root";
    static String url = "jdbc:mysql://localhost/"+bd;
@@ -21,11 +21,11 @@ public class Conexion {
       try{
          //obtenemos el driver de para mysql
          Class.forName("com.mysql.cj.jdbc.Driver");
-         //obtenemos la conexión
+         //obtenemos la conexiÃ³n
          connection = DriverManager.getConnection(url,login,password);
 
          if (connection!=null){
-            System.out.println("Conexión a base de datos "+bd+" OK\n");
+            System.out.println("ConexiÃ³n a base de datos "+bd+" OK\n");
          }
       }
       catch(SQLException e){
@@ -36,7 +36,7 @@ public class Conexion {
          System.out.println(e);
       }
    }
-   /**Permite retornar la conexión*/
+   /**Permite retornar la conexiÃ³n*/
    public Connection getConnection(){
       return connection;
    }
