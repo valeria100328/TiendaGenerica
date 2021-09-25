@@ -18,27 +18,34 @@ import com.fasterxml.jackson.databind.JsonNode;
 public class ClienteController {
 	
 	
-	@RequestMapping("/registrarPersona")
+	@RequestMapping("/registrarUsuario")
 	public void registrarPersona(ClienteVO persona) 
 	 {
 		ClienteDAO Dao=new ClienteDAO(); 
-	    Dao.registrarPersona(persona);
+	    Dao.registrarUsuario(persona);
 	    
 	 }
-	@RequestMapping("/modificarPersona")   
-	public void modificarPersona(ClienteVO persona)
+	
+	@RequestMapping("/consultarUsuario")   
+	public ClienteVO consultarusuario(int cedula_usuario)
 	{
 		ClienteDAO Dao=new ClienteDAO(); 
-	    Dao.modificarPersona(persona);
+	    return Dao.Consultarusuario(cedula_usuario);
 	}
 	
-	/**
-	 * permite consultar el Cliente asociado al documento enviado
-	 * como parametro 
-	 * @param documento 
-	 * @return
-	 */
+	@RequestMapping("/modificarUsuario")   
+	public void modificarUsuario(ClienteVO persona)
+	{
+		ClienteDAO Dao=new ClienteDAO(); 
+	    Dao.modificarUsuario(persona);
+	}
 	
+	@RequestMapping("/eliminarUsuario")   
+	public void eliminarUsuario(ClienteVO persona)
+	{
+		ClienteDAO Dao=new ClienteDAO(); 
+	    Dao.eliminarUsuario(persona);
+	}
 	
 	@RequestMapping("/validar")
     public boolean validate(ClienteVO persona) {
@@ -53,15 +60,62 @@ public class ClienteController {
         
     }
 
-	/**
-	 * permite consultar la lista de Clientes
-	 * @return
-	 */
-	@RequestMapping("/listarPersonas")
-	public ArrayList< ClienteVO> listaDePersonas() {
+	@RequestMapping("/registrarCliente")
+	public void registrarcliente(ClienteVO persona) 
+	 {
 		ClienteDAO Dao=new ClienteDAO(); 
-			
-		return Dao.listaDePersonas();	   
+	    Dao.registrarCliente(persona);
+	    
+	 }
+	
+	@RequestMapping("/consultarCliente")   
+	public ClienteVO consultarcliente(int cedula_cliente)
+	{
+		ClienteDAO Dao=new ClienteDAO(); 
+	    return Dao.ConsultarCliente(cedula_cliente);
+	}
+	
+	@RequestMapping("/modificarCliente")   
+	public void modificarcliente(ClienteVO persona)
+	{
+		ClienteDAO Dao=new ClienteDAO(); 
+	    Dao.modificarCliente(persona);
+	}
+	
+	@RequestMapping("/eliminarCliente")   
+	public void eliminarcliente(ClienteVO persona)
+	{
+		ClienteDAO Dao=new ClienteDAO(); 
+	    Dao.eliminarCliente(persona);
+	}
+	
+	@RequestMapping("/registrarProveedor")
+	public void registrarproveedor(ClienteVO persona) 
+	 {
+		ClienteDAO Dao=new ClienteDAO(); 
+	    Dao.registrarProveedor(persona);
+	    
+	 }
+	
+	@RequestMapping("/consultarProveedor")   
+	public ClienteVO consultarproveedor(long nitproveedor)
+	{
+		ClienteDAO Dao=new ClienteDAO(); 
+	    return Dao.ConsultarProveedor(nitproveedor);
+	}
+	
+	@RequestMapping("/modificarProveedor")   
+	public void modificarproveedor(ClienteVO persona)
+	{
+		ClienteDAO Dao=new ClienteDAO(); 
+	    Dao.modificarProveedor(persona);
+	}
+	
+	@RequestMapping("/eliminarProveedor")   
+	public void eliminarproveedor(ClienteVO persona)
+	{
+		ClienteDAO Dao=new ClienteDAO(); 
+	    Dao.eliminarProveedor(persona);
 	}
 }
 	
