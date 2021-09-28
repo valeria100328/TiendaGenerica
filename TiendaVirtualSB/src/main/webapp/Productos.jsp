@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
-<header>
+  <header>
 		<img alt="tienda" src="Tienda.jpg" width= 130 height = 125/>
     	<div class="menu">
 	        <a href = "Usuarios.jsp">
@@ -32,5 +32,22 @@
 	        </a>
     	</div>
 	</header>
+	<div class = "contenedor">
+		<div class="formularioU" >
+			<form action="ProcesoProductos.jsp" method="post">
+		        <div>
+		          <p>Nombre del archivo:</p>
+		          <input type="file" id="file" name="files" accept="files/*">
+		          <label for="file">
+		              <i class="fas fa-upload"></i> &nbsp;
+		              Examinar
+		          </label>
+		        </div>
+				<div class = "Botones">
+				    <input class="btn" type="submit" name="boton" value="Cargar">
+		   		</div>
+		    </form>
+		 </div>
+	 </div>
 </body>
 </html>
