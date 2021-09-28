@@ -134,3 +134,29 @@ th{
   transform: translateY(4px);
 }
 
+/*Estilos pagina productos*/
+
+p{
+	font-family: 'Quicksand', sans-serif;
+	text-align: left;
+	margin-left: 50px;
+}
+
+input[type = "file"]{
+	display:none;
+}
+
+label{
+	color: black;
+	height: 40px;
+	width: 130px;
+	background-color: #F5DEB3;
+	border-radius: 10px;
+	position: absolute;
+	top:310px;
+	right:350px;
+	font-size: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
