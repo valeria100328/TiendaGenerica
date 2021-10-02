@@ -36,13 +36,9 @@
 		<div class="formularioU" >
 			<form action="ProcesoProductos.jsp" method="post">
 		        <div>
-		          <p>Nombre del archivo:</p>
-		          <input type="file" id="file" name="files" accept="files/*">
-		          <label for="file">
-		              <i class="fas fa-upload"></i> &nbsp;
-		              Examinar
-		          </label>
-		        </div>
+          			<p>Nombre del archivo: &nbsp <i class="fas fa-upload"></i></p>
+          			<input type="file" id="files" class="upload-box"  name="Examinar" value="Examinar">
+        		</div>
 				<div class = "Botones">
 				    <input class="btn" type="submit" name="boton" value="Cargar">
 		   		</div>
