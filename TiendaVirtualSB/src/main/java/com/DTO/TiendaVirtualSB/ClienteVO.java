@@ -1,12 +1,14 @@
 package com.DTO.TiendaVirtualSB;
 
+import java.io.File;
+
 public class ClienteVO {
 	
 	 private Integer cedula_usuario;
 	 private String nombre_usuario;
 	 private String email_usuario;
 	 private String usuario;
-	 private String contraseña;
+	 private String contraseÃ±a;
 	 private Integer cedula_cliente;
 	 private String direccion_cliente;
 	 private String email_cliente;
@@ -17,6 +19,14 @@ public class ClienteVO {
 	 private String direccion_proveedor;
 	 private String nombre_proveedor;
 	 private String telefono_proveedor;
+	 private String Archivo;
+	 private int codigo_producto;
+	 private double ivacompra;
+	 private String nombre_producto;
+	 private double precio_compra;
+	 private double precio_venta;
+	 
+	 
 	 
 	 
 	public Integer getCedula_usuario() {
@@ -51,12 +61,12 @@ public class ClienteVO {
 		this.usuario = usuario;
 	}
 	
-	public String getContraseña() {
-		return contraseña;
+	public String getContraseÃ±a() {
+		return contraseÃ±a;
 	}
 	
-	public void setContraseña(String contraseña) {
-		this.contraseña = contraseña;
+	public void setContraseÃ±a(String contraseÃ±a) {
+		this.contraseÃ±a = contraseÃ±a;
 	}
 
 	public String getDireccion_cliente() {
@@ -141,7 +151,51 @@ public class ClienteVO {
 		this.telefono_proveedor = telefono_proveedor;
 	}
 
-	
+	public int getCodigo_producto() {
+		return codigo_producto;
+	}
 
+	public void setCodigo_producto(int codigo_producto) {
+		this.codigo_producto = codigo_producto;
+	}
+
+	public double getIvacompra() {
+		return ivacompra;
+	}
+
+	public void setIvacompra(double ivacompra) {
+		this.ivacompra = ivacompra;
+	}
+
+	public String getNombre_producto() {
+		return nombre_producto;
+	}
+
+	public void setNombre_producto(String nombre_producto) {
+		this.nombre_producto = nombre_producto;
+	}
+
+	public double getPrecio_compra() {
+		return precio_compra;
+	}
+
+	public void setPrecio_compra(double precio_compra) {
+		this.precio_compra = precio_compra;
+	}
+
+	public double getPrecio_venta() {
+		return precio_venta;
+	}
+
+	public void setPrecio_venta(double precio_venta) {
+		this.precio_venta = precio_venta;
+	}
+
+	public String getArchivo() {
+		return Archivo;
+	}
+
+	public void setArchivo(String archivo) {
+		this.Archivo = archivo;
+	}
 }
-
