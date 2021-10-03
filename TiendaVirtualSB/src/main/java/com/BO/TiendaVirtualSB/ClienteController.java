@@ -23,7 +23,6 @@ public class ClienteController {
 	 {
 		ClienteDAO Dao=new ClienteDAO(); 
 	    Dao.registrarUsuario(persona);
-	    
 	 }
 	
 	@RequestMapping("/consultarUsuario")   
@@ -116,6 +115,13 @@ public class ClienteController {
 	{
 		ClienteDAO Dao=new ClienteDAO(); 
 	    Dao.eliminarProveedor(persona);
+	}
+	
+	@RequestMapping("/enlistarproductos")   
+	public void EnlistarProductos(ClienteVO persona)
+	{
+		ClienteDAO Dao=new ClienteDAO();
+		Dao.ListarProductos(persona);
 	}
 }
 	
