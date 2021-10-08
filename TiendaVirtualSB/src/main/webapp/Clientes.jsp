@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page contentType="text/html; charset=UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,10 +42,10 @@
           				<td height="30px"></td>
         			</tr>
         			<tr>
-          				<td>Cédula:</td>
+          				<td>CÃ©dula:</td>
           				<td><input type="text" name="Cedula"></td>
           				<td width="100px"></td>
-          				<td>Teléfono:</td>
+          				<td>TelÃ©fono:</td>
           				<td><input type="text" name="Telefono"></td>
           				<td width="100px"></td>
         			</tr>
@@ -57,14 +56,14 @@
 				        <td>Nombre Completo:</td>
 				        <td><input type="text" name="Nombre"></td>
 				        <td width="100px"></td>
-				        <td>Correo Electrónico:</td>
+				        <td>Correo ElectrÃ³nico:</td>
 				        <td><input type="text" name="Correo" ></td>
         			</tr>
         			<tr>
           				<td height="20px"></td>
         			</tr>
         			<tr>
-          				<td>Dirección:</td>
+          				<td>DirecciÃ³n:</td>
           				<td><input type="text" name="Direccion" ></td>
           				<td width="100px"></td>
         			</tr>
