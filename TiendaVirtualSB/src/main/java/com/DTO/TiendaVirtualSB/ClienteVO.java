@@ -25,8 +25,14 @@ public class ClienteVO {
 	 private String nombre_producto;
 	 private double precio_compra;
 	 private double precio_venta;
-	 
-	 
+	 private int codigo_venta;
+	 private double total_venta;
+	 private double valor_venta;
+	 private int codigo_detalle_venta;
+	 private int cantidad_producto;
+	 private double valor_total_prod;
+	 private double valor_venta_prod;
+	 private double valoriva_prod;
 	 
 	 
 	public Integer getCedula_usuario() {
@@ -198,4 +204,71 @@ public class ClienteVO {
 	public void setArchivo(String archivo) {
 		this.Archivo = archivo;
 	}
+
+	public int getCodigo_venta() {
+		return codigo_venta;
+	}
+
+	public void setCodigo_venta(int codigo_venta) {
+		this.codigo_venta = codigo_venta;
+	}
+
+	public double getTotal_venta() {
+		return total_venta;
+	}
+
+	public void setTotal_venta(double total_venta) {
+		this.total_venta = total_venta;
+	}
+
+	public double getValor_venta() {
+		return valor_venta;
+	}
+
+	public void setValor_venta(double valor_venta) {
+		this.valor_venta = valor_venta;
+	}
+
+	public int getCodigo_detalle_venta() {
+		return codigo_detalle_venta;
+	}
+
+	public void setCodigo_detalle_venta(int codigo_detalle_venta) {
+		this.codigo_detalle_venta = codigo_detalle_venta;
+	}
+
+	public int getCantidad_producto() {
+		return cantidad_producto;
+	}
+
+	public void setCantidad_producto(int cantidad_producto) {
+		this.cantidad_producto = cantidad_producto;
+	}
+
+	public double getValor_total_prod() {
+		return valor_total_prod;
+	}
+
+	public void setValor_total_prod(double valor_total_prod) {
+		this.valor_total_prod = valor_total_prod;
+	}
+
+	public double getValor_venta_prod() {
+		return valor_venta_prod;
+	}
+
+	public void setValor_venta_prod(double valor_venta_prod) {
+		this.valor_venta_prod = valor_venta_prod;
+	}
+
+	public double getValoriva_prod() {
+		return valoriva_prod;
+	}
+
+	public void setValoriva_prod(double valoriva_prod) {
+		this.valoriva_prod = valoriva_prod;
+	}
+	
+	
+	
 }
