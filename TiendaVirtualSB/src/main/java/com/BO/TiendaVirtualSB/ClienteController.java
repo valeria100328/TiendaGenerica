@@ -123,5 +123,32 @@ public class ClienteController {
 		ClienteDAO Dao=new ClienteDAO();
 		Dao.ListarProductos(persona);
 	}
+	
+	@RequestMapping("/Consultarclienteventa") 
+	public ClienteVO ConsultarClienteVenta(int cedula_cliente)
+	{
+		ClienteDAO Dao=new ClienteDAO(); 
+	    return Dao.ConsultarClienteVenta(cedula_cliente);
+	}
+	
+	@RequestMapping("/consultarProducto")   
+	public ClienteVO consultarproducto(int codigo_producto)
+	{
+		ClienteDAO Dao=new ClienteDAO(); 
+	    return Dao.ConsultarProducto(codigo_producto);
+	}
+	
+	@RequestMapping("/ConfirmarVenta")   
+	public void confirmarventa(ClienteVO persona)
+	{
+		ClienteDAO Dao=new ClienteDAO(); 
+	    Dao.Confirmarventa(persona);
+	}
+	
+	@RequestMapping("/Creardetalle") 
+	public void Creardetalle(ClienteVO persona) {
+		ClienteDAO Dao=new ClienteDAO(); 
+	    Dao.Creardetalle(persona);
+	}
 }
 	
