@@ -1,4 +1,4 @@
-<%@ page
+<%@ page contentType="text/html; charset=UTF-8" 
     import="
         java.io.*,
         java.util.*,
@@ -101,10 +101,10 @@ catch(Exception e){
           				<td height="30px"></td>
         			</tr>
         			<tr>
-          				<td>Cédula:</td>
+          				<td>CÃ©dula:</td>
           				<td><input type="text" name="Cedula" value="<%=cedula_cliente%>"></td>
           				<td width="100px"></td>
-          				<td>Teléfono:</td>
+          				<td>TelÃ©fono:</td>
           				<td><input type="text" name="Telefono" value="<%=telefono%>"></td>
           				<td width="100px"></td>
         			</tr>
@@ -115,14 +115,14 @@ catch(Exception e){
 				        <td>Nombre Completo:</td>
 				        <td><input type="text" name="Nombre" value="<%=nombre_cliente%>"></td>
 				        <td width="100px"></td>
-				        <td>Correo Electrónico:</td>
+				        <td>Correo ElectrÃ³nico:</td>
 				        <td><input type="text" name="Correo" value="<%=email_cliente%>"></td>
         			</tr>
         			<tr>
           				<td height="20px"></td>
         			</tr>
         			<tr>
-          				<td>Dirección:</td>
+          				<td>DirecciÃ³n:</td>
           				<td><input type="text" name="Direccion" value="<%=direccion_cliente%>"></td>
           				<td width="100px"></td>
         			</tr>
