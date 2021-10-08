@@ -6,19 +6,19 @@ body {
 	background-size: cover;
 	overflow: hidden;
 	width: 100%;
-  	height: auto;
+	height: auto;
 }
 
 header {
 	background-color: #f5f3ef;
-  	position:absolute;
-  	left:0;
-  	top:0;
-  	padding:0;
-  	margin:0;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 100%;
+	position:absolute;
+	left:0;
+	top:0;
+	padding:0;
+	margin:0;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
 }
 
 img {
@@ -36,7 +36,7 @@ a {
 
 .button {
   display: inline-block;
-  border-radius: 4px;
+  border-radius: 10px;
   background-color: rgb(255, 254, 254);
   border: white;
   color: none;
@@ -83,34 +83,32 @@ a {
 	padding: 20px;
 }
 
-.formularioU {
+div .formularioU {
 	font-size: 23px;
-    margin: 0 auto;
-    padding-top: 15px;
-    width: 700px;
+	margin: 10%;
+	width: 72%;
 	background: #fff;
 	border-radius: 10px;
-	padding: 20px;
-	place-items: center;
+	padding: 1%;
+	align-items: center;
 	text-align: center;
-	
   }
-  
+
 table , th, td  {
 	text-align:center;
-    border: 0px solid rgb(27, 26, 26);
-    border-collapse: collapse;
+  border: 0px solid rgb(27, 26, 26);
+  border-collapse: collapse;
  	font-family: 'Quicksand', sans-serif;
 	font-size:20px;
   }
- 
+
 th{
     text-align: center;
   }
-  
+
  .btn {
-  	display: inline-block;
-  	padding: 10px 20px;
+	display: inline-block;
+	padding: 10px 20px;
 	font-size: 15px;
 	cursor: pointer;
 	text-align: center;
@@ -119,9 +117,10 @@ th{
 	color: #000000;
 	background-color: #F5DEB3;
 	border: none;
-	border-radius: 15px;
+	border-radius: 20px;
 	box-shadow: 0 9px #999;
 	margin: 10px;
+	font-weight: bold;
 }
 
 .btn:hover {
@@ -172,4 +171,64 @@ p{
 ::-webkit-file-upload-button:hover {
 	background:#F6DDCC;
 }
+
+/*Estilo pagina de ventas*/
+.cantp {
+		width : 30px;
+	}
+
+td .IVA {
+		text-align: left;
+	}
+
+td #precio{
+	text-align: right;
+}
+
+.btnCons {
+	display: inline-block;
+	padding: 5px 10px;
+	font-size: 15px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #000000;
+	background-color: #EDBB99;
+	border: none;
+	border-radius: 20px;
+	margin: 10px;
+	font-weight: bold;
+
+}
+
+.btnCons:hover {
+	background:#F6DDCC;
+}
+ /*Estilos Reportes*/
+ .btn-group .listaR {
+  background-color: #F7DC6F;
+  border: 1px solid #F1C40F;
+	border-radius: 5px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+	align-items: center;
+	margin-left: 25%;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 50%;
+  display: block;
+	font-weight: bold;
+}
+
+.btn-group .listaR:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+.btn-group .listaR:hover {
+  background-color: #F1C40F;
+}
+
 
