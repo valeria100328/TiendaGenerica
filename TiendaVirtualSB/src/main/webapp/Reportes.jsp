@@ -1,12 +1,15 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page contentType="text/html; charset=UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Reportes</title>
-<link href="Reportes.css" rel="stylesheet" type = "text/css" />
+<link href="Estilos.css" rel="stylesheet" type = "text/css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -32,5 +35,16 @@
 	        </a>
     	</div>
 	</header>
+	<div class = "contenedor">
+		<div class="formularioU" >
+			<form action="ProcesoReportes.jsp" method="post">
+		        <div class="btn-group">
+		            <p><button class="listaR">Listado de Usuarios</button><p>
+		            <p><button class="listaR">Listado de Clientes</button></p>
+		            <p><button class="listaR">Ventas por Cliente</button></p>
+		        </div>
+      		</form>
+    	</div>
+	</div>
 </body>
 </html>
