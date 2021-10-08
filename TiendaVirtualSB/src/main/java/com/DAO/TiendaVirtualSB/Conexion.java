@@ -13,6 +13,10 @@ public class Conexion {
    static String login = "root";
    static String password = "root";
    static String url = "jdbc:mysql://localhost/"+bd;
+   /**static String bd = "BD143";
+   static String login = "admin";
+   static String password = "admin123";
+   static String url = "jdbc:mysql://tiendavirtualjh.czo3ixoe3xoe.us-east-1.rds.amazonaws.com/"+bd;*/
 
    Connection connection = null;
 
