@@ -1,4 +1,4 @@
-<%@ page
+<%@ page contentType="text/html; charset=UTF-8" 
     import="
         java.io.*,
         java.util.*,
@@ -10,8 +10,9 @@
 
 
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
 </head>
 <body>
 <%
@@ -19,7 +20,7 @@
 	ClienteController cc=new ClienteController();
 	ClienteVO cli=new ClienteVO();
 	cli.setUsuario(request.getParameter("usuario"));  
-	cli.setContraseña(request.getParameter("contrasena"));
+	cli.setContraseÃ±a(request.getParameter("contrasena"));
 	validacion=cc.validate(cli);
 	if(validacion==true){
 		request.getRequestDispatcher("menu.jsp").forward(request, response);
