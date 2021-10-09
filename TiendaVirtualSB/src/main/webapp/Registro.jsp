@@ -1,10 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page contentType="text/html; charset=UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Tienda Genérica</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tienda GenÃ©rica</title>
 <link href="Registro.css" rel="stylesheet" type = "text/css" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,14 +16,14 @@
 <form action="Login.jsp" method="post">
     <table cellpadding = "12">
         <tr class = "Nombre">
-            <td colspan=2><strong> Bienvenidos a la Tienda Genérica</strong></td>
+            <td colspan=2><strong> Bienvenidos a la Tienda GenÃ©rica</strong></td>
         </tr>
         <tr>
             <td>Usuario:</td>
             <td><input type="text" name = "usuario"/></td>
         </tr>
         <tr>
-            <td>Contraseña:</td>
+            <td>ContraseÃ±a:</td>
             <td><input type="password" name = "contrasena"/></td>
         </tr>
      </table> 
