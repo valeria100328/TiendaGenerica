@@ -1,4 +1,4 @@
-<%@ page
+<%@ page contentType="text/html; charset=UTF-8" 
     import="
         java.io.*,
         java.util.*,
@@ -8,8 +8,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Usuario proceso</title>
 <link href="Estilos.css" rel="stylesheet" type = "text/css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +35,7 @@ if(opcion.equals("Consultar")){
 	nombre_usuario=cli.getNombre_usuario();
 	email_usuario=cli.getEmail_usuario();
 	usuario=cli.getUsuario();
-	password=cli.getContraseña();
+	password=cli.getContraseÃ±a();
 }
 else if(opcion.equals("Crear")){
 	int cedula=Integer.parseInt(request.getParameter("Cedula"));
@@ -42,7 +43,7 @@ else if(opcion.equals("Crear")){
     cli.setEmail_usuario(request.getParameter("Correo"));
     cli.setNombre_usuario(request.getParameter("Nombre"));
     cli.setUsuario(request.getParameter("Usuario"));
-    cli.setContraseña(request.getParameter("Contrasena"));
+    cli.setContraseÃ±a(request.getParameter("Contrasena"));
     cc.registrarPersona(cli);
     request.getRequestDispatcher("Usuario.jsp").forward(request, response);
 }
@@ -52,7 +53,7 @@ else if(opcion.equals("Actualizar")){
     cli.setEmail_usuario(request.getParameter("Correo"));
     cli.setNombre_usuario(request.getParameter("Nombre"));
     cli.setUsuario(request.getParameter("Usuario"));
-    cli.setContraseña(request.getParameter("Contrasena"));
+    cli.setContraseÃ±a(request.getParameter("Contrasena"));
     cc.modificarUsuario(cli);
     request.getRequestDispatcher("Usuario.jsp").forward(request, response);
 }
@@ -101,7 +102,7 @@ catch(Exception e){
           				<td height="30px"></td>
         			</tr>
         			<tr>
-          				<td>Cédula:</td>
+          				<td>CÃ©dula:</td>
           				<td><input type="text" name="Cedula" value="<%=cedula_usuario%>"></td>
           				<td width="100px"></td>
           				<td>Usuario:</td>
@@ -115,14 +116,14 @@ catch(Exception e){
 				        <td>Nombre Completo:</td>
 				        <td><input type="text" name="Nombre" value="<%=nombre_usuario%>"></td>
 				        <td width="100px"></td>
-				        <td>Contraseña:</td>
+				        <td>ContraseÃ±a:</td>
 				        <td><input type="password" name="Contrasena" value="<%=password%>"></td>
         			</tr>
         			<tr>
           				<td height="20px"></td>
         			</tr>
         			<tr>
-          				<td>Correo electrónico:</td>
+          				<td>Correo electrÃ³nico:</td>
           				<td><input type="text" name="Correo" value="<%=email_usuario%>"></td>
           				<td width="100px"></td>
         			</tr>
