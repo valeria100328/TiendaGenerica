@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page contentType="text/html; charset=UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Proveedores</title>
 <link href="Estilos.css" rel="stylesheet" type = "text/css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
@@ -46,7 +46,7 @@
           				<td>NIT:</td>
           				<td><input type="text" name="NIT"></td>
           				<td width="100px"></td>
-          				<td>Teléfono:</td>
+          				<td>TelÃ©fono:</td>
           				<td><input type="text" name="Telefono"></td>
           				<td width="100px"></td>
         			</tr>
@@ -64,7 +64,7 @@
           				<td height="20px"></td>
         			</tr>
         			<tr>
-          				<td>Dirección:</td>
+          				<td>DirecciÃ³n:</td>
           				<td><input type="text" name="Direccion" ></td>
           				<td width="100px"></td>
         			</tr>
