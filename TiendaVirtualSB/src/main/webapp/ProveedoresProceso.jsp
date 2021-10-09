@@ -1,4 +1,4 @@
-<%@ page
+<%@ page contentType="text/html; charset=UTF-8"
     import="
         java.io.*,
         java.util.*,
@@ -8,8 +8,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proveedores proceso</title>
 <link href="Estilos.css" rel="stylesheet" type = "text/css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -104,7 +105,7 @@ catch(Exception e){
           				<td>NIT:</td>
           				<td><input type="text" name="NIT" value="<%=nitproveedor%>"></td>
           				<td width="100px"></td>
-          				<td>Teléfono:</td>
+          				<td>TelÃ©fono:</td>
           				<td><input type="text" name="Telefono" value="<%=telefono_proveedor%>"></td>
           				<td width="100px"></td>
         			</tr>
@@ -122,7 +123,7 @@ catch(Exception e){
           				<td height="20px"></td>
         			</tr>
         			<tr>
-          				<td>Dirección:</td>
+          				<td>DirecciÃ³n:</td>
           				<td><input type="text" name="Direccion" value="<%=direccion_proveedor%>"></td>
           				<td width="100px"></td>
         			</tr>
