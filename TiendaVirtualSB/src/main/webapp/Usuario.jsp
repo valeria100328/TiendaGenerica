@@ -1,7 +1,9 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Usuarios</title>
 <link href="Estilos.css" rel="stylesheet" type = "text/css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
@@ -41,7 +43,7 @@
           				<td height="30px"></td>
         			</tr>
         			<tr>
-          				<td>Cédula:</td>
+          				<td>CÃ©dula:</td>
           				<td><input type="text" name="Cedula"></td>
           				<td width="100px"></td>
           				<td>Usuario:</td>
@@ -55,14 +57,14 @@
 				        <td>Nombre Completo:</td>
 				        <td><input type="text" name="Nombre"></td>
 				        <td width="100px"></td>
-				        <td>Contraseña:</td>
+				        <td>ContraseÃ±a:</td>
 				        <td><input type="password" name="Contrasena" ></td>
         			</tr>
         			<tr>
           				<td height="20px"></td>
         			</tr>
         			<tr>
-          				<td>Correo electrónico:</td>
+          				<td>Correo electrÃ³nico:</td>
           				<td><input type="text" name="Correo" ></td>
           				<td width="100px"></td>
         			</tr>
