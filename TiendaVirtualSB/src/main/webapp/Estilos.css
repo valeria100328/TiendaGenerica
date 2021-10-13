@@ -231,6 +231,8 @@ h2 {
   color: white;
 }
 
+/*Estilos listado clientes*/
+
 #Clientes {
 	font-family: 'Quicksand', sans-serif;
 	border-collapse: collapse;
@@ -255,6 +257,8 @@ h2 {
   background-color: #6495ED;
   color: white;
 }
+
+/*Estilos ventas por cliente*/
 
 #VentasCli {
 	font-family: 'Quicksand', sans-serif;
