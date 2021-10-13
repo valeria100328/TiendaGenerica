@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -37,13 +38,17 @@
 	</header>
 	<div class = "contenedor">
 		<div class="formularioU" >
-			<form action="ProcesoReportes.jsp" method="post">
-		        <div class="btn-group">
-		            <p><button class="listaR">Listado de Usuarios</button><p>
-		            <p><button class="listaR">Listado de Clientes</button></p>
-		            <p><button class="listaR">Ventas por Cliente</button></p>
-		        </div>
-      		</form>
+	        <div class="btn-group">
+					<a href="ListadoUsuarios.jsp">
+	            		<p><button class="listaR">Listado de Usuarios</button><p>
+					</a>
+					<a href="ListadoClientes.jsp">
+	            		<p><button class="listaR">Listado de Clientes</button></p>
+					</a>
+					<a href="VentasCliente.jsp">
+	            		<p><button class="listaR">Ventas por Cliente</button></p>
+					</a>
+	        </div>
     	</div>
 	</div>
 </body>
