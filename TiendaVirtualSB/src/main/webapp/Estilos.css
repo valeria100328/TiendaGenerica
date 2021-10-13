@@ -16,9 +16,9 @@ header {
 	top:0;
 	padding:0;
 	margin:0;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 100%;
 }
 
 img {
@@ -86,7 +86,7 @@ a {
 div .formularioU {
 	font-size: 23px;
 	margin: 10%;
-	width: 72%;
+	width: 52%;
 	background: #fff;
 	border-radius: 10px;
 	padding: 1%;
@@ -172,54 +172,22 @@ p{
 	background:#F6DDCC;
 }
 
-/*Estilo pagina de ventas*/
-.cantp {
-		width : 30px;
-	}
-
-td .IVA {
-		text-align: left;
-	}
-
-td #precio{
-	text-align: right;
-}
-
-.btnCons {
-	display: inline-block;
-	padding: 5px 10px;
-	font-size: 15px;
-	cursor: pointer;
-	text-align: center;
-	text-decoration: none;
-	outline: none;
-	color: #000000;
-	background-color: #EDBB99;
-	border: none;
-	border-radius: 20px;
-	margin: 10px;
-	font-weight: bold;
-
-}
-
-.btnCons:hover {
-	background:#F6DDCC;
-}
  /*Estilos Reportes*/
+ 
  .btn-group .listaR {
-  background-color: #F7DC6F;
-  border: 1px solid #F1C40F;
+	background-color: #F7DC6F;
+	border: 1px solid #F1C40F;
 	border-radius: 5px;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
+	color: black;
+	padding: 15px 32px;
+	text-align: center;
 	align-items: center;
 	margin-left: 25%;
-  text-decoration: none;
-  font-size: 16px;
-  cursor: pointer;
-  width: 50%;
-  display: block;
+	text-decoration: none;
+	font-size: 16px;
+	cursor: pointer;
+	width: 50%;
+	display: block;
 	font-weight: bold;
 }
 
@@ -229,6 +197,93 @@ td #precio{
 
 .btn-group .listaR:hover {
   background-color: #F1C40F;
+}
+
+/*Estilos listado usuarios*/
+
+h2 {
+	font-family: 'Ephesis', cursive;
+	font-size: 45px;
+	margin:2%;
+}
+#Usuarios {
+	font-family: 'Quicksand', sans-serif;
+	border-collapse: collapse;
+	width: 95%;
+	align-items: center;
+	margin:2%;
+}
+
+#Usuarios td, #Usuarios th {
+  border: 1px solid #ddd;
+  padding: 1px;
+}
+
+#Usuarios tr:nth-child(even){background-color: #f2f2f2;}
+
+#Usuarios tr:hover {background-color: #ddd;}
+
+#Usuarios th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #6495ED;
+  color: white;
+}
+
+#Clientes {
+	font-family: 'Quicksand', sans-serif;
+	border-collapse: collapse;
+	width: 95%;
+	align-items: center;
+	margin:2%;
+}
+
+#Clientes td, #Clientes th {
+  border: 1px solid #ddd;
+  padding: 1px;
+}
+
+#Clientes tr:nth-child(even){background-color: #f2f2f2;}
+
+#Clientes tr:hover {background-color: #ddd;}
+
+#Clientes th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #6495ED;
+  color: white;
+}
+
+#VentasCli {
+	font-family: 'Quicksand', sans-serif;
+	border-collapse: collapse;
+	width: 95%;
+	align-items: center;
+	margin:2%;
+}
+
+#VentasCli td, #VentasCli th {
+  border: 1px solid #ddd;
+  padding: 1px;
+}
+
+#VentasCli tr:nth-child(even){background-color: #f2f2f2;}
+
+#VentasCli tr:hover {background-color: #ddd;}
+
+#VentasCli th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color:#6495ED;
+  color: white;
+}
+
+#TotalVe {
+	text-align: right;
+	margin:3%;
 }
 
 
