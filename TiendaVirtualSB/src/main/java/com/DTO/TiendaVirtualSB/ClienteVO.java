@@ -33,6 +33,9 @@ public class ClienteVO {
 	 private double valor_total_prod;
 	 private double valor_venta_prod;
 	 private double valoriva_prod;
+	 private double iva_venta;
+	 private double total_por_cliente;
+	 private double total_todo;
 	 
 	 
 	public Integer getCedula_usuario() {
@@ -267,6 +270,30 @@ public class ClienteVO {
 
 	public void setValoriva_prod(double valoriva_prod) {
 		this.valoriva_prod = valoriva_prod;
+	}
+
+	public double getIva_venta() {
+		return iva_venta;
+	}
+
+	public void setIva_venta(double iva_venta) {
+		this.iva_venta = iva_venta;
+	}
+
+	public double getTotal_por_cliente() {
+		return total_por_cliente;
+	}
+
+	public void setTotal_por_cliente(double total_por_cliente) {
+		this.total_por_cliente = total_por_cliente;
+	}
+
+	public double getTotal_todo() {
+		return total_todo;
+	}
+
+	public void setTotal_todo(double total_todo) {
+		this.total_todo = total_todo;
 	}
 	
 	
