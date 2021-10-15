@@ -189,6 +189,7 @@ p{
 	width: 50%;
 	display: block;
 	font-weight: bold;
+	font-family: 'Ephesis', cursive;
 }
 
 .btn-group .listaR:not(:last-child) {
