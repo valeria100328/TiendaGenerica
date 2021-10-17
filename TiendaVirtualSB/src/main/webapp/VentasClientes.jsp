@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"
+<%@ page contentType="text/html; charset=UTF-8" 
     import="
         java.io.*,
         java.util.*,
@@ -20,9 +19,10 @@
 <!DOCTYPE html>
  <html>
     <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <title>Registered Users</title>
-    <link href="Estilos.css" rel="stylesheet" type = "text/css" />
+  	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registered Users</title>
+<link href="Estilos.css" rel="stylesheet" type = "text/css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,11 +46,11 @@
           $.each(data, function(i, item) {
           lista = document.getElementById("myTable");
           var tr = document.createElement("tr");
-          var columna1 = document.createElement("th")
+          var columna1 = document.createElement("td")
           columna1.innerHTML = item.cedula_cliente;
-          var columna2 = document.createElement("th")
+          var columna2 = document.createElement("td")
           columna2.innerHTML = item.nombre_cliente;
-          var columna3 = document.createElement("th")
+          var columna3 = document.createElement("td")
           columna3.innerHTML = item.total_por_cliente;
 			
         	
@@ -60,7 +60,6 @@
           tr.appendChild(columna3);
           
           var total = document.createElement("p")
-
        
          });
         }
@@ -102,17 +101,12 @@
               <th>Nombre</th>
               <th>Valor Total Ventas</th>
             </tr>
-</thead>
+
 <tbody id="myTable">
 </tbody>
-			<tr>
-              <th></th>
-              <th></th>
-              <th></th>
-              
-              <th><p id="TotalVe">Total Ventas $: <%=total %></p></th>
-            </tr>
+			
 </table>
+<p id="TotalVe">Total Ventas $: <%=total %></p>
 
  
         
