@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page contentType="text/html; charset=UTF-8"%>
 <!DOCTYPE html>
  <html>
     <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registered Users</title>
     <link href="Estilos.css" rel="stylesheet" type = "text/css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
@@ -30,28 +30,23 @@
           $.each(data, function(i, item) {
           lista = document.getElementById("myTable");
           var tr = document.createElement("tr");
-          var columna1 = document.createElement("th")
+          var columna1 = document.createElement("td")
           columna1.innerHTML = item.cedula_cliente;
-          var columna2 = document.createElement("th")
+          var columna2 = document.createElement("td")
           columna2.innerHTML = item.nombre_cliente;
-          var columna3 = document.createElement("th")
+          var columna3 = document.createElement("td")
           columna3.innerHTML = item.email_cliente;
-          var columna4 = document.createElement("th")
+          var columna4 = document.createElement("td")
           columna4.innerHTML = item.direccion_cliente;
-          var columna5 = document.createElement("th")
+          var columna5 = document.createElement("td")
           columna5.innerHTML = item.telefono_cliente;
-
       	
           
           lista.appendChild(tr);
           tr.appendChild(columna1);
-
           tr.appendChild(columna2);
-
           tr.appendChild(columna3);
-
           tr.appendChild(columna4);
-
           tr.appendChild(columna5);
        
          });
@@ -96,7 +91,7 @@
               <th>Dirección</th>
               <th>Teléfono</th>
             </tr>
-</thead>
+
 <tbody id="myTable">
 </tbody>
 </center>
